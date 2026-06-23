@@ -1,15 +1,7 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".output/public",
-  "functions": {
-    "api/server.js": {
-      "includeFiles": ".output/**"
-    }
-  },
+  "outputDirectory": "dist/client",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/api/server.js"
-    }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
